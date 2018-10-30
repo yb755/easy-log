@@ -9,5 +9,6 @@
   	<module>log-annotation</module>
     <module>log-annotation-drive</module>
     <module>log-test</module>
+    <module>log-service</module>
   </modules>
 </project>

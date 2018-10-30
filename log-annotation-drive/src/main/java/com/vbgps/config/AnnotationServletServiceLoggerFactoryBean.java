@@ -9,14 +9,14 @@ import org.springframework.context.ApplicationContextAware;
 
 public class AnnotationServletServiceLoggerFactoryBean implements FactoryBean<AnnotationServletServiceLogger>, ApplicationContextAware, InitializingBean, DisposableBean {
 
-	private AnnotationServletServiceLogger logger = new AnnotationServletServiceLogger();
+	private AnnotationServletServiceLogger logger;
 
 	public void destroy() throws Exception {
 
 	}
 
 	public void afterPropertiesSet() throws Exception {
-
+		logger = new AnnotationServletServiceLogger();
 	}
 
 	public void setApplicationContext(ApplicationContext arg0) throws BeansException {

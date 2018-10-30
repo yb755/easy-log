@@ -11,5 +11,4 @@ public class AnnotationServletServiceLogger {
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
-
 }
